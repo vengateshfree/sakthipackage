@@ -9,6 +9,7 @@ import {
   Warehouse,
   Move,
   ArrowRight,
+  Star,
 } from "lucide-react";
 
 const services = [
@@ -81,13 +82,28 @@ const services = [
 
 export default function Service() {
   return (
-    <section className="bg-[#f7fafc] py-20">
+    <section className="bg-gray-50 py-20">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <p className="text-xs tracking-widest text-gray-400 mb-2">
+            <div className='border border-primary/50 px-3 mb-2 py-1.5 bg-primary/20 rounded-md inline-flex' >
+                        <p class="bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent 
+                   uppercase tracking-[0.2em] font-semibold 
+                   drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] text-sm   ">
+                              <span className="flex items-center gap-2" >
+                    
+                      <span>
+                       FAVOURITE CONSIGNMENT
+                      </span>
+                      <span className="animate-spin"  style={{ animationDuration: "5s" }} >
+                            <Star size={15} className="text-primary"  />
+                      </span>
+                    </span>
+                        </p>
+                    </div>
+        {/* <p className="text-xs tracking-widest text-gray-400 mb-2">
           FAVOURITE CONSIGNMENT
-        </p>
-        <h2 className="text-3xl font-bold text-gray-900 leading-tight">
+        </p> */}
+        <h2 className="h2 mt-2 font-bold text-gray-900 leading-tight">
           Secured, Affordable & Reliable <br />
           Logistics Support
         </h2>
@@ -123,14 +139,19 @@ export default function Service() {
           }`}
         >
           <Icon className="w-8 h-8 text-primary mb-4" />
-          <h3 className="text-lg font-semibold text-gray-900 mb-2">
+          <div className="h5 font-semibold text-gray-900 mb-2">
             {item.title}
-          </h3>
-          <p className="text-sm text-gray-500 mb-4">
+          </div>
+          <div className="h6 text-gray-500 mb-4">
             {item.desc}
-          </p>
-          <span className="text-xs font-semibold tracking-widest text-gray-800 cursor-pointer hover:text-sky-500">
+          </div>
+          <span className="text-xs font-semibold tracking-widest cursor-pointer hover:text-sky-500 flex items-center text-yellow-500">
+        <span>
             READ MORE
+            </span>
+            <span>
+            <ArrowRight size={16} className="ml-1" />
+            </span>
           </span>
         </div>
       </div>

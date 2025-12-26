@@ -1,3 +1,5 @@
+import { Star } from "lucide-react";
+
 export default function OurProcess() {
   const steps = [
     {
@@ -27,13 +29,28 @@ export default function OurProcess() {
   ];
 
   return (
-    <section className="relative py-28 bg-white overflow-hidden">
+    <section className="relative py-18 bg-white overflow-hidden">
       {/* Header */}
       <div className="text-center mb-20">
-        <p className="text-sm tracking-widest text-red-500 font-semibold mb-3">
+        {/* <p className="text-sm tracking-widest text-red-500 font-semibold mb-3">
           02 _ WORK PROCESS
-        </p>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900">
+        </p> */}
+            <div className='border border-primary/50 px-3 mb-2 py-1.5 bg-primary/20 rounded-md inline-flex' >
+                        <p class="bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent 
+                   uppercase tracking-[0.2em] font-semibold 
+                   drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] text-sm   ">
+                              <span className="flex items-center gap-2" >
+                    
+                      <span>
+                       WORK PROCESS
+                      </span>
+                      <span className="animate-spin"  style={{ animationDuration: "5s" }} >
+                            <Star size={15} className="text-primary"  />
+                      </span>
+                    </span>
+                        </p>
+                    </div>
+        <h2 className="text-4xl md:text-5xl mt-2 font-extrabold text-slate-900">
           Logistics workflow
         </h2>
       </div>
@@ -77,7 +94,7 @@ export default function OurProcess() {
     className={`relative w-12 h-12 flex items-center justify-center 
                rounded-full bg-red-500 text-white font-bold 
                shadow-lg ring-8 ring-red-100 
-               animate-[pulse-ring_${item.step}s_infinite]`}
+               animate-[pulse-ring_2s_infinite]`}
   >
     {item.step}
   </span>
@@ -86,12 +103,12 @@ export default function OurProcess() {
             </div>
 
             {/* Text */}
-            <h3 className="mt-8 text-lg font-bold text-slate-900">
+            <div className="mt-8 h5 font-bold text-yellow-800">
               {item.title}
-            </h3>
-            <p className="mt-3 text-sm text-slate-500 leading-relaxed">
+            </div>
+            <div className="mt-3  h6 text-slate-500 leading-relaxed">
               {item.desc}
-            </p>
+            </div>
           </div>
         ))}
       </div>

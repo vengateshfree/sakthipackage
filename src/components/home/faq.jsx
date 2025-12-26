@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Star } from 'lucide-react';
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(1);
@@ -40,15 +40,30 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-lg text-slate-600">
+           <div className='border border-primary/50 px-3 mb-2 py-1.5 bg-primary/20 rounded-md inline-flex' >
+                        <p class="bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent 
+                   uppercase tracking-[0.2em] font-semibold 
+                   drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] text-sm   ">
+                              <span className="flex items-center gap-2" >
+                    
+                      <span>
+                     Frequently Asked Questions
+                      </span>
+                      <span className="animate-spin"  style={{ animationDuration: "5s" }} >
+                            <Star size={15} className="text-primary"  />
+                      </span>
+                    </span>
+                        </p>
+                    </div>
+            {/* <h2 className="h2 font-bold text-slate-900 mb-4">
+            
+            </h2> */}
+          <p className="h2 font-extrabold text-gray-900 w-full lg:w-[70%] text-center mx-auto mt-2">
             Everything you need to know about our product and services
           </p>
         </div>
         {/* FAQ Items */}
-<div className="relative bg-slate-50 py-16">
+<div className="relative bg-slate-50 py-6">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
@@ -99,7 +114,9 @@ export default function FAQSection() {
         </div>
 
         {/* Question */}
-        <h3 className="flex-1 text-slate-900 font-semibold text-base sm:text-lg">
+        <h3 className={`  ${
+              openIndex === index ? "text-yellow-800" : "text-slate-900"
+            } h6 transition-colors`}>
           {faq.question}
         </h3>
 
@@ -119,7 +136,7 @@ export default function FAQSection() {
               : "max-h-0 opacity-0 scale-y-95"
           }`}
       >
-        <div className="px-6 pb-6 pl-[4.75rem] text-slate-600 leading-relaxed text-sm sm:text-base">
+        <div className="px-6 pb-6 pl-[4.75rem] text-slate-600 leading-relaxed h6">
           {faq.answer}
         </div>
       </div>

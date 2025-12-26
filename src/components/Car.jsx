@@ -1,69 +1,39 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {
-    Rocket,
-    ShieldCheck,
-    DollarSign,
-    PhoneCall,
-} from "lucide-react";
-import Navbar from "./Navbar";
-
+import { useState } from "react";
 
 const slides = [
-    {
-        image: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg",
-        title: "We Provide Best Warehousing Services",
-        desc:
-            "Hi-Safe Packers and Movers is one of the best packers and movers service provider company in Erode",
-    },
-    {
-        image: "https://images.pexels.com/photos/163726/belgium-antwerp-shipping-container-163726.jpeg",
-        title: "Safe & Secure Storage Solutions",
-        desc:
-            "Modern infrastructure with 24/7 monitoring and professional handling",
-    },
-    {
-        image: "https://images.pexels.com/photos/753331/pexels-photo-753331.jpeg",
-        title: "Safe & Secure Storage Solutions",
-        desc:
-            "Modern infrastructure with 24/7 monitoring and professional handling",
-    },
-    {
-        image:"https://images.pexels.com/photos/31305410/pexels-photo-31305410.jpeg",
-        title: "Safe & Secure Storage Solutions",
-        desc:
-            "Modern infrastructure with 24/7 monitoring and professional handling",
-    },
+  {
+    image: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg",
+    title: "Trusted Warehousing & Storage Services",
+    desc:
+      "Hi-Safe Packers and Movers offers secure, spacious, and well-managed warehousing solutions in Erode, ensuring complete safety for your goods.",
+  },
+  {
+    image: "https://images.pexels.com/photos/163726/belgium-antwerp-shipping-container-163726.jpeg",
+    title: "Safe, Secure & Modern Storage Facilities",
+    desc:
+      "Our warehouses are equipped with advanced infrastructure, 24/7 surveillance, and professional handling for maximum protection.",
+  },
+  {
+    image: "https://images.pexels.com/photos/753331/pexels-photo-753331.jpeg",
+    title: "Reliable Logistics & Moving Solutions",
+    desc:
+      "From packing to transportation and storage, we provide end-to-end logistics services tailored to your needs.",
+  },
+  {
+    image: "https://images.pexels.com/photos/31305410/pexels-photo-31305410.jpeg",
+    title: "Your Goods, Our Responsibility",
+    desc:
+      "We ensure careful handling, timely delivery, and complete peace of mind with our experienced moving professionals.",
+  },
 ];
 
 
-const features = [
-    {
-        title: "Fast Delivery",
-        desc: "Fast and quality delivery",
-        bg: "bg-orange-800/30",
-        icon: Rocket,
-    },
-    {
-        title: "Secured Services",
-        desc: "Complex long-distance transportation",
-        bg: "bg-yellow-500/30",
-        icon: ShieldCheck,
-    },
-    {
-        title: "Affordable Prices",
-        desc: "Save cost to carry fridge, TV, etc",
-        bg: "bg-orange-800/30",
-        icon: DollarSign,
-    },
-    {
-        title: "24/7 Support",
-        desc: "Ensuring even better customer experience",
-        bg: "bg-yellow-500/30",
-        icon: PhoneCall,
-    },
-];
 export default function HeroCarousel() {
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
     return (
         <section className="relative">
 
@@ -80,9 +50,10 @@ export default function HeroCarousel() {
   stopOnHover={false}
   swipeable={false}         // prevent swipe movement
   emulateTouch={false}  
+  onChange={(index) => setActiveIndex(index)}  
             >
                 {slides.map((slide, i) => (
-                    <div key={i} className="relative h-screen">
+                    <div key={i} className="relative h-[400px] md:h-screen">
                         <img
                             src={slide.image}
                             alt=""
@@ -93,27 +64,44 @@ export default function HeroCarousel() {
                         <div className="absolute inset-0 bg-linear-to-r from-black/50 to-transparent" />
 
                         {/* Content */}
-                        <div className="absolute inset-0 flex items-center justify-start">
-                            <div className="container mx-auto px-6 lg:px-16">
-                                <div className="max-w-4xl text-white">
-                                    <h1 className="h1 leading-tight font-extrabold text-start">
-                                        {slide.title}
-                                    </h1>
+ 
+ <div className="absolute inset-0 flex items-center justify-start">
+  <div className="container mx-auto px-6 lg:px-16">
+    <div className="max-w-4xl text-white">
 
-                                    <p className="mt-4 text-gray-200 h4 text-start">
-                                        {slide.desc}
-                                    </p>
-<div className="flex" >
-                                    <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition">
-                                        READ MORE
-                                    </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      {/* Re-mount on every slide */}
+      <div  className="animate-slide-up">
+        <h1 className="h1 font-extrabold leading-tight text-left">
+          {slide.title}
+        </h1>
+
+        {/* <p className="mt-4 max-w-xl text-lg text-white/90">
+          {slide.desc}
+        </p> */}
+      <div className="flex" >
+        <button className="mt-6 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition">
+          READ MORE
+        </button>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
                     </div>
                 ))}
             </Carousel>
+
+        </section>
+    );
+}
+
+
+
+
 
             {/* ===== BOTTOM FEATURE CARDS ===== */}
             {/* <div className="relative -mt-24 z-10">
@@ -144,132 +132,3 @@ export default function HeroCarousel() {
                     </div>
                 </div>
             </div> */}
-        </section>
-    );
-}
-
-
-// const slides = [
-//   {
-//     image: "https://images.pexels.com/photos/31305410/pexels-photo-31305410.jpeg",
-//     title: "We Provide Best Warehousing Services",
-//     desc: "Hi-Safe Packers and Movers is one of the best service providers in Erode",
-//     variant: "left",
-//   },
-//   {
-//     image: "https://images.pexels.com/photos/31305410/pexels-photo-31305410.jpeg",
-//     title: "Safe & Secure Storage Solutions",
-//     desc: "Modern infrastructure with 24/7 monitoring",
-//     variant: "right",
-//   },
-//   {
-//     image: "https://images.pexels.com/photos/31305410/pexels-photo-31305410.jpeg",
-//     title: "Fast & Reliable Moving",
-//     desc: "Door-to-door professional relocation services",
-//     variant: "center",
-//   },
-//   {
-//     image: "https://images.pexels.com/photos/31305410/pexels-photo-31305410.jpeg",
-//     title: "Affordable Prices Guaranteed",
-//     desc: "Best pricing without compromising safety",
-//     variant: "split",
-//   },
-// ];
-
-
-
-
-
-
-// import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-// export default function HeroCarousel() {
-//   return (
-//     <section className="relative">
-//       <Carousel
-//         autoPlay
-//         infiniteLoop
-//         interval={4500}
-//         transitionTime={1000}
-//         showThumbs={false}
-//         showStatus={false}
-//         showIndicators={false}
-//         stopOnHover={false}
-//         swipeable
-//       >
-//         {slides.map((slide, i) => (
-//           <div key={i} className="relative h-[80vh] overflow-hidden">
-//             {/* IMAGE WITH DIFFERENT EFFECTS */}
-//             <img
-//               src={slide.image}
-//               className={`h-full w-full object-cover ${
-//                 slide.variant === "center"
-//                   ? "scale-110 animate-slowZoom"
-//                   : slide.variant === "split"
-//                   ? "scale-105 rotate-1"
-//                   : ""
-//               }`}
-//               alt=""
-//             />
-
-//             {/* Overlay */}
-//             <div className="absolute inset-0 bg-black/50" />
-
-//             {/* CONTENT */}
-//             <div className="absolute inset-0 flex items-center">
-//               <div className="container mx-auto px-6 lg:px-16">
-//                 {slide.variant === "left" && (
-//                   <div className="max-w-xl text-white animate-slideLeft">
-//                     <h1 className="text-5xl font-bold">{slide.title}</h1>
-//                     <p className="mt-4 text-gray-200">{slide.desc}</p>
-//                     <button className="mt-6 bg-orange-500 px-6 py-3 rounded-full">
-//                       READ MORE
-//                     </button>
-//                   </div>
-//                 )}
-
-//                 {slide.variant === "right" && (
-//                   <div className="ml-auto max-w-xl text-right text-white animate-slideRight">
-//                     <h1 className="text-5xl font-bold">{slide.title}</h1>
-//                     <p className="mt-4 text-gray-200">{slide.desc}</p>
-//                     <button className="mt-6 border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
-//                       DISCOVER
-//                     </button>
-//                   </div>
-//                 )}
-
-//                 {slide.variant === "center" && (
-//                   <div className="mx-auto max-w-2xl text-center text-white animate-fadeUp">
-//                     <h1 className="text-5xl font-extrabold tracking-wide">
-//                       {slide.title}
-//                     </h1>
-//                     <p className="mt-4 text-gray-200">{slide.desc}</p>
-//                     <button className="mt-6 bg-yellow-500 px-8 py-3 rounded-lg font-semibold">
-//                       GET STARTED
-//                     </button>
-//                   </div>
-//                 )}
-
-//                 {slide.variant === "split" && (
-//                   <div className="grid md:grid-cols-2 gap-10 items-center text-white">
-//                     <div className="animate-slideLeft">
-//                       <h1 className="text-5xl font-bold">{slide.title}</h1>
-//                       <p className="mt-4">{slide.desc}</p>
-//                       <button className="mt-6 bg-orange-600 px-6 py-3 rounded-full">
-//                         CONTACT US
-//                       </button>
-//                     </div>
-//                     <div className="hidden md:block animate-slideRight">
-//                       <div className="h-72 w-full rounded-xl bg-white/20 backdrop-blur-lg" />
-//                     </div>
-//                   </div>
-//                 )}
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </Carousel>
-//     </section>
-//   );
-// }

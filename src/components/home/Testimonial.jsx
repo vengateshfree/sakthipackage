@@ -1,3 +1,4 @@
+import { Star } from "lucide-react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -38,9 +39,24 @@ export default function Testimonial() {
         
         {/* LEFT CONTENT */}
         <div>
-          <p className="text-red-500  text-sm font-semibold tracking-widest uppercase mb-4">
-            03 _ WHAT PEOPLE SAY
-          </p>
+              <div className='border border-primary/50 px-3 mb-2 py-1.5 bg-primary/20 rounded-md inline-flex' >
+                        <p class="bg-gradient-to-r from-primary to-primary bg-clip-text text-transparent 
+                   uppercase tracking-[0.2em] font-semibold 
+                   drop-shadow-[0_0_10px_rgba(172,98,255,0.5)] text-sm   ">
+                              <span className="flex items-center gap-2" >
+                    
+                      <span>
+                     WHAT PEOPLE SAY
+                      </span>
+                      <span className="animate-spin"  style={{ animationDuration: "5s" }} >
+                            <Star size={15} className="text-primary"  />
+                      </span>
+                    </span>
+                        </p>
+                    </div>
+          {/* <p className="text-red-500  text-sm font-semibold tracking-widest uppercase mb-4">
+            03 _ 
+          </p> */}
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 ">
             What our clients <br /> say about us
           </h2>
