@@ -16,7 +16,7 @@ const slides = [
       "Hi-Safe Packers and Movers offers secure, spacious, and well-managed warehousing solutions in Erode, ensuring complete safety for your goods.",
   },
   {
-    image:  parcel10,
+    image: parcel10,
     title: "Safe, Secure & Modern Storage Facilities",
     desc:
       "Our warehouses are equipped with advanced infrastructure, 24/7 surveillance, and professional handling for maximum protection.",
@@ -38,85 +38,85 @@ const slides = [
 
 export default function HeroCarousel() {
 
-    const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-    const navigate = useNavigate ();
+  const navigate = useNavigate();
 
-    return (
-        <section className="relative">
+  return (
+    <section className="relative">
 
-            {/* ===== HERO CAROUSEL ===== */}
-            <Carousel
-              autoPlay
-  infiniteLoop
-  interval={4000}
-  transitionTime={1000}      // fade duration
-  animationHandler="fade"   // 👈 KEY
-  showThumbs={false}
-  showStatus={false}
-  showIndicators={false}
-  stopOnHover={false}
-  swipeable={false}         // prevent swipe movement
-  emulateTouch={false}  
-  onChange={(index) => setActiveIndex(index)}  
-            >
-                {slides.map((slide, i) => (
-                    <div key={i} className="relative h-[400px] md:h-screen ">
-                        <img
-                            src={slide.image}
-                            alt=""
-                            className="h-full w-full object-cover"
-                        />
+      {/* ===== HERO CAROUSEL ===== */}
+      <Carousel
+        autoPlay
+        infiniteLoop
+        interval={4000}
+        transitionTime={1000}      // fade duration
+        animationHandler="fade"   // 👈 KEY
+        showThumbs={false}
+        showStatus={false}
+        showIndicators={false}
+        stopOnHover={false}
+        swipeable={false}         // prevent swipe movement
+        emulateTouch={false}
+        onChange={(index) => setActiveIndex(index)}
+      >
+        {slides.map((slide, i) => (
+          <div key={i} className="relative h-[400px] md:h-screen ">
+            <img
+              src={slide.image}
+              alt=""
+              className="h-full w-full object-cover"
+            />
 
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-linear-to-r from-black/50 to-transparent" />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-linear-to-r from-black/50 to-transparent" />
 
-                        {/* Content */}
- 
- <div className="absolute inset-0 flex items-center justify-start">
-  <div className="container mx-auto px-6 lg:px-16">
-    <div className="max-w-4xl text-white">
+            {/* Content */}
 
-      {/* Re-mount on every slide */}
-      <div  className="animate-slide-up">
-        <h1 className="h1 font-extrabold leading-tight text-left">
-          {slide.title}
-        </h1>
+            <div className="absolute inset-0 flex items-center justify-start">
+              <div className="container mx-auto px-6 lg:px-16">
+                <div className="max-w-4xl text-white">
 
-        {/* <p className="mt-4 max-w-xl text-lg text-white/90">
+                  {/* Re-mount on every slide */}
+                  <div className="animate-slide-up">
+                    <h1 className="h1 font-extrabold leading-tight text-left">
+                      {slide.title}
+                    </h1>
+
+                    {/* <p className="mt-4 max-w-xl text-lg text-white/90">
           {slide.desc}
         </p> */}
-      <div className="flex" >
-       <button
-  onClick={() => navigate("/contact")}
-  className="mt-6 cursor-pointer relative z-50 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition"
->
-  Contact Us
-</button>
-
-      </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
+                    <div className="flex" >
+                      <button
+                        onClick={() => navigate("/contact")}
+                        className="mt-6 cursor-pointer relative z-50 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition"
+                      >
+                        Contact Us
+                      </button>
 
                     </div>
-                ))}
-            </Carousel>
+                  </div>
 
-        </section>
-    );
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        ))}
+      </Carousel>
+
+    </section>
+  );
 }
 
 
 
 
 
-            {/* ===== BOTTOM FEATURE CARDS ===== */}
-            {/* <div className="relative -mt-24 z-10">
+{/* ===== BOTTOM FEATURE CARDS ===== */ }
+{/* <div className="relative -mt-24 z-10">
                 <div className="container mx-auto  w-[90%]  lg:w-[70%] bg-black/50">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 overflow-hidden rounded-lg shadow-lg">
                         {features.map((item, i) => {
