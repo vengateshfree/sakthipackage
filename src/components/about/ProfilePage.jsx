@@ -4,8 +4,12 @@ import React from "react";
 
 import parcel10 from '../../assets/parcel10.jpg'
 
+import parcel3 from '../../assets/parcel3.jpg'
+import parcel5 from '../../assets/parcel5.jpg'
+import parcel7 from '../../assets/parcel7.jpg'
+
 function ProfilePage() {
-  return (
+  return ( 
     <div className="bg-gray-50">
 
       {/* HERO */}
@@ -128,9 +132,7 @@ Whether your move is local or long-distance, we also offer secure temporary stor
         {/* RIGHT IMAGES */}
         <div className="space-y-6 lg:sticky lg:top-24 h-fit">
           {[
-            "https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg",
-            "https://images.pexels.com/photos/4246118/pexels-photo-4246118.jpeg",
-            "https://images.pexels.com/photos/4246266/pexels-photo-4246266.jpeg",
+            parcel3, parcel5, parcel7
           ].map((img, index) => (
             <div
               key={index}

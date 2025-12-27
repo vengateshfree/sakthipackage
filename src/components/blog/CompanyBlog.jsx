@@ -1,5 +1,7 @@
 import React from 'react';
 import parcel10 from '../../assets/parcel10.jpg'
+import parcel21 from '../../assets/parcel21.jpeg'
+import parcel11 from '../../assets/parcel11.jpg'
 
 
 export default function CompanyBlog() {
@@ -8,7 +10,7 @@ export default function CompanyBlog() {
       id: 1,
       date: '24',
       month: 'SEP',
-      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
+      image: parcel10,
       title: 'The advantages of a digital supply strategy',
       author: 'ADMIN',
       comments: 13
@@ -17,7 +19,7 @@ export default function CompanyBlog() {
       id: 2,
       date: '21',
       month: 'SEP',
-      image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
+      image: parcel21,
       title: 'How will you know success when it show up?',
       author: 'ADMIN',
       comments: 8
@@ -26,7 +28,7 @@ export default function CompanyBlog() {
       id: 3,
       date: '17',
       month: 'SEP',
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+      image: parcel11,
       title: 'We carefully handle the valueable goods',
       author: 'ADMIN',
       comments: 1
