@@ -1,30 +1,35 @@
 import { Star } from "lucide-react";
 
+import parcel15 from '../../assets/parcel15.jpg'
+import parcel13 from '../../assets/parcel13.jpg'
+import parcel16 from '../../assets/parcel16.jpg'
+import parcel3 from '../../assets/parcel3.jpg'
+
 export default function OurProcess() {
   const steps = [
     {
       step: "01",
       title: "Order Processing",
       desc: "The logistics process begins with the receipt of customer orders.",
-      img: "https://images.pexels.com/photos/4481328/pexels-photo-4481328.jpeg",
+      img: parcel15,
     },
     {
       step: "02",
       title: "Warehousing",
       desc: "Goods that are ready for shipment are stored in warehouses.",
-      img: "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg",
+      img: parcel13,
     },
     {
       step: "03",
       title: "Order Tracking",
       desc: "Real-time tracking systems are used to monitor the shipment.",
-      img: "https://images.pexels.com/photos/5474296/pexels-photo-5474296.jpeg",
+      img: parcel16,
     },
     {
       step: "04",
       title: "Product Delivery",
       desc: "In the final stage of logistics services, products are delivered.",
-      img: "https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg",
+      img: parcel3
     },
   ];
 

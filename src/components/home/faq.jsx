@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, Star } from 'lucide-react';
+import parcel21 from '../../assets/parcel21.jpeg'
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(1);
@@ -72,7 +73,7 @@ export default function FAQSection() {
         <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-3xl blur-2xl"></div>
 
         <img
-          src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg"
+          src={parcel21}
           alt="FAQ"
           className="relative z-10 w-full rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] object-cover"
         />

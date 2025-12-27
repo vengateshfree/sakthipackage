@@ -13,14 +13,18 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+import parcel17 from '../../assets/parcel17.jpg'
+import parcel18 from '../../assets/parcel18.jpg'
+import parcel19 from '../../assets/parcel19.jpg'
+import parcel20 from '../../assets/parcel20.jpg'
+
 const services = [
   {
     title: "Bike Transportation",
     desc: "Safe and reliable bike transportation services across cities.",
     icon: Bike,
     url: "/services/bike",
-    image:
-      "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg",
+    image:  parcel17 ,
     reverse: false,
   },
   {
@@ -29,8 +33,7 @@ const services = [
     icon: Car,
     
     url: "/services/car",
-    image:
-      "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg",
+    image: parcel18,
     reverse: false,
   },
   {
@@ -39,8 +42,7 @@ const services = [
     icon: Home,
     
     url: "/services/home",
-    image:
-      "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg",
+    image: parcel19,
     reverse: true,
   },
   {
@@ -49,42 +51,9 @@ const services = [
     icon: Building2,
     
     url: "/services/office",
-    image:
-      "https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg",
-    reverse: true,
+    image: parcel20, 
+     reverse: true,
   },
-//   {
-//     title: "Packing & Moving",
-//     desc: "High-quality packing materials and expert moving services.",
-//     icon: Package,
-//     image:
-//       "https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg",
-//     reverse: false,
-//   },
-//   {
-//     title: "Relocation Services",
-//     desc: "Complete relocation solutions for local and intercity moves.",
-//     icon: Truck,
-//     image:
-//       "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg",
-//     reverse: false,
-//   },
-//   {
-//     title: "Warehouse Services",
-//     desc: "Secure and spacious warehouse storage solutions.",
-//     icon: Warehouse,
-//     image:
-//       "https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg",
-//     reverse: true,
-//   },
-//   {
-//     title: "Loading & Unloading",
-//     desc: "Professional loading and unloading handled by experts.",
-//     icon: Move,
-//     image:
-//       "https://images.pexels.com/photos/4246267/pexels-photo-4246267.jpeg",
-//     reverse: true,
-//   },
 ];
 
 

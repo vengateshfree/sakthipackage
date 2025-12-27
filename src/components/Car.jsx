@@ -2,28 +2,33 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import parcel9 from '../assets/parcel9.jpg'
+import parcel10 from '../assets/parcel10.jpg'
+import parcel11 from '../assets/parcel11.jpg'
+import parcel14 from '../assets/parcel14.jpg'
+
 
 const slides = [
   {
-    image: "https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg",
+    image: parcel9,
     title: "Trusted Warehousing & Storage Services",
     desc:
       "Hi-Safe Packers and Movers offers secure, spacious, and well-managed warehousing solutions in Erode, ensuring complete safety for your goods.",
   },
   {
-    image: "https://images.pexels.com/photos/163726/belgium-antwerp-shipping-container-163726.jpeg",
+    image:  parcel10,
     title: "Safe, Secure & Modern Storage Facilities",
     desc:
       "Our warehouses are equipped with advanced infrastructure, 24/7 surveillance, and professional handling for maximum protection.",
   },
   {
-    image: "https://images.pexels.com/photos/753331/pexels-photo-753331.jpeg",
+    image: parcel11,
     title: "Reliable Logistics & Moving Solutions",
     desc:
       "From packing to transportation and storage, we provide end-to-end logistics services tailored to your needs.",
   },
   {
-    image: "https://images.pexels.com/photos/31305410/pexels-photo-31305410.jpeg",
+    image: parcel14,
     title: "Your Goods, Our Responsibility",
     desc:
       "We ensure careful handling, timely delivery, and complete peace of mind with our experienced moving professionals.",

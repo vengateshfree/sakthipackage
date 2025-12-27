@@ -1,5 +1,5 @@
 import { Phone, ChevronRight } from "lucide-react";
-
+ import logo from '../assets/logo.png';
 const Footer = () => {
   return (
     <footer className="bg-[#1f2326] text-gray-300 pt-14">
@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Logo & About */}
         <div>
           <img
-            src="/logo.png" // replace with your logo path
+            src={logo} // replace with your logo path
             alt="Hi-Safe Packers & Movers"
             className="h-14 mb-4"
           />

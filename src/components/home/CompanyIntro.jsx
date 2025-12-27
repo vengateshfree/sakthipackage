@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, Check, Star, Trophy } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import parcel12 from '../../assets/parcel12.jpg'
 
 export default function CompanyIntro() {
 
@@ -15,7 +16,7 @@ export default function CompanyIntro() {
           {/* Image */}
           <div className="z-50" >
           <img
-            src="https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg"
+            src={parcel12}
             alt="Logistics"
             className="relative  z-10 rounded-2xl w-full object-cover"
           />
