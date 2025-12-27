@@ -79,9 +79,7 @@ export default function CompanyIntro() {
           </h2>
 
           <p className="text-gray-600 mb-8 max-w-xl h5">
-            Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultrices
-            the dictum facilisis thr sem. Imperdiet massa turpis sit Lorem
-            ipsum dolor sit amet.
+        Customer trust is at the heart of everything we do. We focus on transparent pricing, timely service, and personalized support to ensure complete peace of mind throughout the shifting process.
           </p>
 
           {/* Features */}
