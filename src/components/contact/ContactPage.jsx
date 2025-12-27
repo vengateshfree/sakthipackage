@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import CustomSelect from './CustomSelect';
+import parcel10 from '../../assets/parcel10.jpg'
+ 
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -63,8 +65,7 @@ export default function ContactPage() {
     <div
   className="relative bg-cover bg-center h-[400px] flex  text-center items-center"
   style={{
-    backgroundImage:
-      "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
+    backgroundImage: `url(${parcel10})`,
   }}
 >
   {/* Overlay */}

@@ -1,13 +1,13 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
+import parcel20 from "../../assets/parcel20.jpg";
 function OfficePage() {
   const [openFaq, setOpenFaq] = useState(null);
 
 
   const pageContent = {
-  heroImage:
-    "https://images.unsplash.com/photo-1596079890744-cb1d0c6d4f5b?w=1200&h=400&fit=crop",
+  heroImage: parcel20,
   title: "Office Shifting Services",
   description: [
     "Our Office Shifting Service is designed to relocate your workspace efficiently with minimal downtime. Whether you are moving a small office or a large corporate setup, we ensure a smooth and well-coordinated transition.",
@@ -45,7 +45,7 @@ const faqs = [
     answer:
       "We plan the move in phases, use proper labeling, and coordinate closely with your team to ensure a fast and organized setup.",
   },
-  {
+  { 
     question: "Is office equipment insured during shifting?",
     answer:
       "Yes, transit insurance options are available to protect office assets against unforeseen damage during relocation.",

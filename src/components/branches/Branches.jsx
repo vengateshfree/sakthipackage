@@ -1,8 +1,15 @@
 import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import parcel9 from '../../assets/parcel9.jpg'
+import parcel10 from '../../assets/parcel10.jpg'
+
+import parcel11 from '../../assets/parcel11.jpg'
+import parcel14 from '../../assets/parcel14.jpg'
+import { useNavigate } from 'react-router-dom';
 
 export default function Branches() {
  
+  const navigate = useNavigate()
 
   const branches = [
   {
@@ -55,9 +62,8 @@ export default function Branches() {
          <div
         className="relative bg-cover bg-center h-[400px] flex  text-center items-center mt-10"
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
-        }}
+            backgroundImage: `url(${parcel10})`,
+         }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
@@ -194,7 +200,7 @@ export default function Branches() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold mb-4">Ready to Move?</h3>
           <p className="text-xl mb-6 opacity-90">Contact us today for a free quote and hassle-free moving experience</p>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
+          <button onClick={()=>navigate("/contact")} className="bg-orange-500 cursor-pointer hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl">
             Request a Quote
           </button>
         </div>

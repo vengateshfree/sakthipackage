@@ -1,4 +1,6 @@
 import React from 'react';
+import parcel10 from '../../assets/parcel10.jpg'
+
 
 export default function CompanyBlog() {
   const blogPosts = [
@@ -36,9 +38,8 @@ export default function CompanyBlog() {
                   <div
   className="relative bg-cover bg-center h-[400px] flex  text-center items-center"
   style={{
-    backgroundImage:
-      "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
-  }}
+     backgroundImage: `url(${parcel10})`,
+ }}
 >
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/60"></div>

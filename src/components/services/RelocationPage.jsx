@@ -1,12 +1,12 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
+import parcel10 from "../../assets/parcel10.jpg";
 function RelocationPage() {
   const [openFaq, setOpenFaq] = useState(null);
 
 const pageContent = {
-  heroImage:
-    "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=400&fit=crop",
+  heroImage:parcel10,
   title: "Relocation Services",
   description: [
     "Our Relocation Services are designed to provide a smooth and well-managed moving experience for individuals, families, and businesses. Whether you are relocating locally or moving to another city, we take care of every detail from start to finish.",

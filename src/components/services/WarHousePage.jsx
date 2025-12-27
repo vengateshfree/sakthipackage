@@ -1,60 +1,63 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
+ 
+import parcel8 from "../../assets/parcel8.jpg";
 
 function WarHousePage() {
   const [openFaq, setOpenFaq] = useState(null);
 
-const pageContent = {
-  heroImage:
-    "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=400&fit=crop",
-  title: "Loading & Unloading Services",
+
+const pageContent = { 
+  heroImage: parcel8,
+  title: "Warehouse Services",
   description: [
-    "Our Loading & Unloading Services are designed to ensure the safe handling of goods during transportation and relocation. Whether it is household items, office equipment, or commercial cargo, our trained workforce manages every item with care and efficiency.",
-    "Using proper tools, techniques, and safety measures, we minimize the risk of damage and ensure smooth movement of goods at both origin and destination points. Our team focuses on precision, speed, and safety.",
+    "Our Warehouse Services provide secure, organized, and flexible storage solutions for household goods, commercial inventory, and business assets. Whether you need short-term or long-term storage, we offer reliable warehousing facilities to meet your requirements.",
+    "Equipped with modern infrastructure and security systems, our warehouses ensure safe storage, easy access, and efficient inventory management. We focus on cleanliness, safety, and systematic handling of stored goods.",
   ],
   extraDescription:
-    "We follow a systematic loading and unloading process that includes item assessment, proper lifting methods, secure placement, and careful handling. Our goal is to ensure damage-free movement and complete customer satisfaction.",
+    "We follow a well-managed warehousing process that includes item inspection, labeling, safe stacking, inventory tracking, and controlled access. Our goal is to provide cost-effective and secure storage solutions with complete peace of mind.",
 };
 
 const serviceCards = [
   {
     id: 1,
     number: "01",
-    title: "Trained Handling Staff",
-    desc: "Our experienced professionals are trained in safe lifting, stacking, and handling techniques.",
-    score: "99% SAFE HANDLING",
+    title: "Secure Storage Facilities",
+    desc: "Our warehouses are monitored with CCTV, fire safety systems, and controlled access for maximum protection.",
+    score: "99% STORAGE SAFETY",
   },
   {
     id: 2,
     number: "02",
-    title: "Proper Tools & Equipment",
-    desc: "We use trolleys, straps, lifts, and protective gear to ensure efficient and secure handling of goods.",
-    score: "98% DAMAGE-FREE OPERATIONS",
+    title: "Flexible Storage Plans",
+    desc: "We offer customizable storage options including short-term and long-term warehousing solutions.",
+    score: "98% CUSTOMER SATISFACTION",
   },
 ];
 
 const faqs = [
   {
-    question: "What items can you load and unload?",
+    question: "What items can be stored in your warehouse?",
     answer:
-      "We handle household goods, furniture, appliances, office equipment, and commercial materials.",
+      "We store household goods, office equipment, furniture, commercial inventory, and non-perishable items.",
   },
   {
-    question: "Do you provide loading and unloading as a standalone service?",
+    question: "Is my stored goods insured?",
     answer:
-      "Yes, our loading and unloading services can be booked independently or combined with moving services.",
+      "Yes, insurance options are available to protect stored items against fire, theft, and other unforeseen risks.",
   },
   {
-    question: "Is safety equipment used during loading and unloading?",
+    question: "Can I access my goods while they are in storage?",
     answer:
-      "Yes, our team uses safety gear and proper equipment to ensure safe and damage-free handling.",
+      "Yes, access can be arranged with prior notice based on warehouse policies and security procedures.",
   },
   {
-    question: "Can you handle heavy and bulky items?",
+    question: "Do you provide short-term and long-term storage?",
     answer:
-      "Absolutely. We are equipped and trained to handle heavy, oversized, and delicate items safely.",
+      "Absolutely. We offer flexible storage durations to suit temporary and extended warehousing needs.",
   },
 ];
+
 
 
 
@@ -66,7 +69,7 @@ const faqs = [
           src={pageContent.heroImage}
           alt="Bike Transportation"
           className="w-full h-full object-cover opacity-80"
-        />
+        /> 
       </div>
 
       {/* ===== TITLE & DESCRIPTION ===== */}

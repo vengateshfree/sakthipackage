@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Mail, Phone, MapPin, Download, Plus, Minus } from 'lucide-react';
 import { Outlet, useNavigate } from 'react-router-dom';
+import parcel10 from '../../assets/parcel10.jpg'
 
 
 
@@ -45,9 +46,8 @@ const services = [
        <div
         className="relative bg-cover bg-center h-[400px] flex  text-center items-center mt-10"
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
-        }}
+           backgroundImage: `url(${parcel10})`,
+      }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>

@@ -1,4 +1,5 @@
 import React from "react";
+import parcel10 from '../../assets/parcel10.jpg'
 
 function VisionPage() {
   return (
@@ -8,9 +9,8 @@ function VisionPage() {
       <div
         className="relative h-[420px] flex items-center justify-center bg-cover bg-center mt-10 "
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
-        }}
+           backgroundImage: `url(${parcel10})`,
+       }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/50"></div>
        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

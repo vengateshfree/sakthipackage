@@ -3,16 +3,16 @@ import CompanyIntro from '../home/CompanyIntro'
 import OurProcess from '../home/OurProcess'
 import Service from '../home/Service'
 import Testimonial from '../home/Testimonial'
+import parcel10 from '../../assets/parcel10.jpg'
 
 function HowItWorkPage() {
   return (
     <div>
                     <div
-  className="relative bg-cover bg-center h-[500px] flex  text-center items-center mt-10"
+  className="relative bg-cover bg-center h-[400px] flex  text-center items-center mt-10"
   style={{
-    backgroundImage:
-      "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
-  }}
+     backgroundImage: `url(${parcel10})`,
+ }}
 >
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/60"></div>

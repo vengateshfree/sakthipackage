@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import parcel10 from '../../assets/parcel10.jpg'
 
 const OurWorks = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -67,8 +68,7 @@ const OurWorks = () => {
       <div
         className="relative bg-cover bg-center h-[400px] flex  text-center items-center mt-10"
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
+      backgroundImage: `url(${parcel10})`,
         }}
       >
         {/* Overlay */}

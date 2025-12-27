@@ -1,12 +1,13 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
-function PackagePage() {
+import parcel13 from "../../assets/parcel13.jpg";
+
+function PackagePage() { 
   const [openFaq, setOpenFaq] = useState(null);
 
   const pageContent = {
-  heroImage:
-    "https://images.unsplash.com/photo-1605902711622-cfb43c44367f?w=1200&h=400&fit=crop",
+  heroImage: parcel13,
   title: "Packing & Moving Services",
   description: [
     "Our Packing & Moving Services are designed to ensure safe, organized, and hassle-free relocation of your belongings. Whether it is household goods, office equipment, or individual packages, we handle every item with care and precision.",

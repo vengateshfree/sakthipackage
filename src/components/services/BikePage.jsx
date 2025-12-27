@@ -1,13 +1,13 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
+import parcel17 from "../../assets/parcel17.jpg";
 function Bikepage() {
   const [openFaq, setOpenFaq] = useState(null);
 
   // ===== PAGE CONTENT DATA =====
   const pageContent = {
-    heroImage:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=400&fit=crop",
+    heroImage: parcel17,
     title: "Bike Transportation Services",
     description: [
       "Our Bike Transportation Service is designed to move your two-wheeler safely, efficiently, and without hassle. Whether you are relocating to a new city or sending your bike across states, we ensure secure handling from pickup to delivery using professional packing methods.",
