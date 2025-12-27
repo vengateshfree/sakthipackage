@@ -19,6 +19,9 @@ import WarHousePage from './components/services/WarHousePage'
 import LoadingPage from './components/services/LoadingPage'
 import CompanyBlog from './components/blog/CompanyBlog'
 import ScrollToTop from './ScrollToTop'
+import VisionPage from './components/about/VisionPage'
+import ProfilePage from './components/about/ProfilePage'
+import HowItWorkPage from './components/about/HowItWorkPage'
 
 function App() {
   return (
@@ -30,7 +33,7 @@ function App() {
       {/* <div className="" >
                    <Navbar />
                 </div> */}
-                <ScrollToTop />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Navbar />} >
@@ -38,10 +41,15 @@ function App() {
           <Route path="/branches" element={<Branches />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/works" element={<OurWorks />} />
-          
+
           <Route path="/blogs" element={<CompanyBlog />} />
+          <Route path="/about" element={<ServicePage />} />
+
+            <Route path="/vision" element={<VisionPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/howitwork" element={<HowItWorkPage />} />
           <Route path="/services" element={<ServicePage />}>
-          
+
             <Route path="car" element={<CarPage />} />
             <Route path="bike" element={<Bikepage />} />
             <Route path="home" element={<HomePage />} />
@@ -51,6 +59,8 @@ function App() {
             <Route path="warhouse" element={<WarHousePage />} />
             <Route path="loading" element={<LoadingPage />} />
           </Route>
+
+
 
 
         </Route>

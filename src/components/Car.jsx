@@ -1,6 +1,7 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
@@ -34,6 +35,8 @@ export default function HeroCarousel() {
 
     const [activeIndex, setActiveIndex] = useState(0);
 
+    const navigate = useNavigate ();
+
     return (
         <section className="relative">
 
@@ -53,7 +56,7 @@ export default function HeroCarousel() {
   onChange={(index) => setActiveIndex(index)}  
             >
                 {slides.map((slide, i) => (
-                    <div key={i} className="relative h-[400px] md:h-screen">
+                    <div key={i} className="relative h-[400px] md:h-screen ">
                         <img
                             src={slide.image}
                             alt=""
@@ -79,9 +82,13 @@ export default function HeroCarousel() {
           {slide.desc}
         </p> */}
       <div className="flex" >
-        <button className="mt-6 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition">
-          READ MORE
-        </button>
+       <button
+  onClick={() => navigate("/contact")}
+  className="mt-6 cursor-pointer relative z-50 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition"
+>
+  Contact Us
+</button>
+
       </div>
       </div>
 

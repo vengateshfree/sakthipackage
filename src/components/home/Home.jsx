@@ -11,7 +11,7 @@ import FAQSection from './faq'
 function Home() {
   return (
     <>
-   
+    
     <HeroCarousel />
     <CompanyIntro />
     <OurProcess />

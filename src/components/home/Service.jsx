@@ -11,12 +11,14 @@ import {
   ArrowRight,
   Star,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
     title: "Bike Transportation",
     desc: "Safe and reliable bike transportation services across cities.",
     icon: Bike,
+    url: "/services/bike",
     image:
       "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg",
     reverse: false,
@@ -25,6 +27,8 @@ const services = [
     title: "Car Transportation",
     desc: "Door-to-door car transportation with complete safety.",
     icon: Car,
+    
+    url: "/services/car",
     image:
       "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg",
     reverse: false,
@@ -33,6 +37,8 @@ const services = [
     title: "Home Shifting",
     desc: "Hassle-free home shifting services with professional handling.",
     icon: Home,
+    
+    url: "/services/home",
     image:
       "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg",
     reverse: true,
@@ -41,6 +47,8 @@ const services = [
     title: "Office Shifting",
     desc: "Quick and secure office relocation with minimal downtime.",
     icon: Building2,
+    
+    url: "/services/office",
     image:
       "https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg",
     reverse: true,
@@ -81,6 +89,9 @@ const services = [
 
 
 export default function Service() {
+
+  const navigate = useNavigate();
+
   return (
     <section className="bg-gray-50 py-20">
       {/* Heading */}
@@ -145,7 +156,7 @@ export default function Service() {
           <div className="h6 text-gray-500 mb-4">
             {item.desc}
           </div>
-          <span className="text-xs font-semibold tracking-widest cursor-pointer hover:text-sky-500 flex items-center text-yellow-500">
+          <span onClick={() => navigate(item?.url)} className="text-xs font-semibold tracking-widest cursor-pointer hover:text-yellow-700 flex items-center text-yellow-500">
         <span>
             READ MORE
             </span>
@@ -159,7 +170,7 @@ export default function Service() {
   })}
 </div>
 <div className="flex justify-center items-center mt-10" > 
-     <button className="border  border-primary cursor-pointer text-primary px-8 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-primary hover:text-white transition">
+     <button onClick={() => navigate("/services/bike")} className="border  border-primary cursor-pointer text-primary px-8 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-primary hover:text-white transition">
             See More Service <span>
 <ArrowRight size={20}  className="mt-1" />
             </span>

@@ -52,10 +52,30 @@ export default function Branches() {
     <div className="min-h-screen  bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100">
       {/* Hero Section */}
       
+         <div
+        className="relative bg-cover bg-center h-[400px] flex  text-center items-center mt-10"
+        style={{
+          backgroundImage:
+            "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h1 className="h1 font-bold text-white">
+            Branches
+          </h1>
+          <p className="mt-3 text-gray-200 max-w-2xl h3">
+         We are located across Tamil Nadu to serve you better.            
+          </p>
+        </div>
+      </div>
       
 
       
-      <div className="pt-40 bg-gradient-to-r from-orange-500 to-amber-500 text-white py-16 px-4">
+      <div className="pt-10 bg-gradient-to-r from-orange-500 to-amber-500 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-5xl font-bold mb-4">Our Branches</h1>
           <p className="text-xl opacity-90">Find us at convenient locations across Tamil Nadu</p>

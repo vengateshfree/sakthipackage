@@ -40,7 +40,31 @@ const services = [
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 flex mt-30 max-w-7xl mx-auto">
+    <>
+    
+       <div
+        className="relative bg-cover bg-center h-[400px] flex  text-center items-center mt-10"
+        style={{
+          backgroundImage:
+            "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h1 className="h1 font-bold text-white">
+            Our Services
+          </h1>
+          {/* <p className="mt-3 text-gray-200 max-w-2xl h3">
+            We'd love to hear from you. Let's talk about your project!
+          </p> */}
+        </div>
+      </div>
+
+         <div className="min-h-screen bg-gray-50 flex mt-20 max-w-7xl mx-auto">
+      
       {/* Sidebar */}
       <div className="w-64 bg-white flex-shrink-0 hidden lg:block">
         {/* Our Services */}
@@ -123,11 +147,15 @@ console.log("Current Path:", location.pathname, "Service Path:", service.path, "
         </div>
       </div>
 
+      
+
       {/* Main Content */}
 
       <Outlet />
    
 
     </div>
+    </>
+ 
   );
 }

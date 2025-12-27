@@ -1,6 +1,9 @@
 import { ArrowLeft, ArrowRight, Check, Star, Trophy } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function CompanyIntro() {
+
+   const navigate = useNavigate ();
   return (
     <section className=" my-10 md:my-30">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 md:gap-30 items-center">
@@ -102,7 +105,7 @@ export default function CompanyIntro() {
           </div>
 
           {/* Button */}
-          <button className="border  border-primary text-primary px-8 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-primary hover:text-white transition">
+          <button onClick={() => navigate("/profile")} className="border  cursor-pointer border-primary text-primary px-8 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-primary hover:text-white transition">
             Learn More <span>
 <ArrowRight size={20}  />
             </span>

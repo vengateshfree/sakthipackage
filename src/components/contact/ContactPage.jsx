@@ -61,7 +61,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 mt-10">
       {/* Header */}
     <div
-  className="relative bg-cover bg-center h-[500px] flex  text-center items-center"
+  className="relative bg-cover bg-center h-[400px] flex  text-center items-center"
   style={{
     backgroundImage:
       "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
@@ -75,9 +75,7 @@ export default function ContactPage() {
     <h1 className="h1 font-bold text-white">
       Get In Touch
     </h1>
-    <p className="mt-3 text-gray-200 max-w-2xl h3">
-      We'd love to hear from you. Let's talk about your project!
-    </p>
+ 
   </div>
 </div>
 

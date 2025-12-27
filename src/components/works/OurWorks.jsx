@@ -30,8 +30,8 @@ const OurWorks = () => {
     }
   ];
 
-  const filteredItems = activeFilter === 'All' 
-    ? portfolioItems 
+  const filteredItems = activeFilter === 'All'
+    ? portfolioItems
     : portfolioItems.filter(item => item.category === activeFilter);
 
   const handleFilterChange = (filter) => {
@@ -45,7 +45,7 @@ const OurWorks = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 mt-10"> 
+    <div className="min-h-screen bg-gray-50 ">
       <style>{`
         @keyframes fadeInUp {
           from {
@@ -64,26 +64,24 @@ const OurWorks = () => {
       `}</style>
 
 
-          <div
-  className="relative bg-cover bg-center h-[500px] flex  text-center items-center"
-  style={{
-    backgroundImage:
-      "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
-  }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/60"></div>
+      <div
+        className="relative bg-cover bg-center h-[400px] flex  text-center items-center mt-10"
+        style={{
+          backgroundImage:
+            "url('https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg')",
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-  {/* Content */}
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-    <h1 className="h1 font-bold text-white">
-   Our portfolio
-    </h1>
-    <p className="mt-3 text-gray-200 max-w-2xl h3">
-      We'd love to hear from you. Let's talk about your project!
-    </p>
-  </div>
-</div>
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h1 className="h1 font-bold text-white">
+            Our portfolio
+          </h1>
+      
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto">
         {/* <div className="text-center mb-12">
           <p className="text-red-500 text-sm font-semibold tracking-wider uppercase mb-3">
@@ -100,11 +98,10 @@ const OurWorks = () => {
             <button
               key={filter}
               onClick={() => handleFilterChange(filter)}
-              className={`px-6 py-3 rounded-md font-semibold text-sm transition-all duration-300 transform hover:scale-105 ${
-                activeFilter === filter
+              className={`px-6 py-3 rounded-md font-semibold text-sm transition-all duration-300 transform hover:scale-105 ${activeFilter === filter
                   ? 'bg-red-500 text-white shadow-lg scale-105'
                   : 'bg-gray-800 text-white hover:bg-gray-700'
-              }`}
+                }`}
             >
               {filter}
             </button>
@@ -112,9 +109,8 @@ const OurWorks = () => {
         </div>
 
         {/* Portfolio Grid */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-300 ${
-          isAnimating ? 'opacity-0 transform scale-95' : 'opacity-100 transform scale-100'
-        }`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-300 ${isAnimating ? 'opacity-0 transform scale-95' : 'opacity-100 transform scale-100'
+          }`}>
           {filteredItems.map((item, index) => (
             <div
               key={item.id}
@@ -128,7 +124,7 @@ const OurWorks = () => {
                   alt={item.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
-                
+
                 {/* Discount Badge */}
                 {item.discount && (
                   <div className="absolute top-4 right-4 bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm shadow-lg">
