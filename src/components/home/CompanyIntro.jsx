@@ -10,32 +10,37 @@ export default function CompanyIntro() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 md:gap-30 items-center">
         
         {/* IMAGE SIDE */}
-        <div className="relative">
-          {/* Border Accent */}
+     {/* IMAGE SIDE */}
+<section className="relative z-0">
+  <div className="relative">
 
-          {/* Image */}
-          <div className="z-10" >
-          <img
-            src={parcel12}
-            alt="Logistics"
-            className="  z-10 rounded-2xl w-full object-cover"
-          />
-          </div>
-          <div className="absolute -right-5 top-7 h-[90%] w-10 rounded-md border-2 border-lime-400 hidden z-0 lg:block"></div>
+    {/* Border Accent */}
+    <div className="absolute -right-5 top-7 h-[90%] w-10 rounded-md 
+                    border-2 border-lime-400 hidden lg:block z-0" />
 
-          {/* Badge */}
-          <div  className="relative z-10" >
-          <div className="absolute -bottom-8 right-8 bg-primary text-white rounded-2xl px-8 py-6 flex items-center gap-5 z-10 shadow-lg">
-            <div className="bg-accent text-primary rounded-full ">
-              <Trophy size={40}  className="text-white" />
-            </div>
-            <div>
-              <h3 className="text-3xl font-bold">20+</h3>
-              <p className="text-sm opacity-90">Winning award</p>
-            </div>
-          </div>
-          </div>
-        </div>
+    {/* Image */}
+    <img
+      src={parcel12}
+      alt="Logistics"
+      className="rounded-2xl w-full object-cover relative z-0"
+    />
+
+    {/* Badge */}
+    <div className="absolute -bottom-8 right-8 bg-primary text-white 
+                    rounded-2xl px-8 py-6 flex items-center gap-5 
+                    shadow-lg z-10">
+      <div className="bg-accent rounded-full">
+        <Trophy size={40} className="text-white" />
+      </div>
+      <div>
+        <h3 className="text-3xl font-bold">20+</h3>
+        <p className="text-sm opacity-90">Winning award</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
         {/* CONTENT SIDE */}
         <div>
