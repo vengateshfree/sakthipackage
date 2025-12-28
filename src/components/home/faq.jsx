@@ -69,15 +69,26 @@ export default function FAQSection() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
       {/* Image Section */}
-      <div className="relative">
-        <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-3xl blur-2xl"></div>
+   <section className="relative z-0 overflow-visible">
+  <div className="relative">
 
-        <img
-          src={parcel21}
-          alt="FAQ"
-          className="relative z-10 w-full rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] object-cover"
-        />
-      </div>
+    {/* Decorative glow */}
+    <div className="absolute -top-6 -left-6 w-32 h-32 
+                    bg-primary/10 rounded-3xl 
+                    blur-2xl z-0 pointer-events-none" />
+
+    {/* Image */}
+    <img
+      src={parcel21}
+      alt="FAQ"
+      className="relative w-full rounded-3xl 
+                 shadow-[0_20px_50px_rgba(0,0,0,0.15)] 
+                 object-cover z-10"
+    />
+
+  </div>
+</section>
+
 
       {/* FAQ Section */}
     <div className="space-y-6">
