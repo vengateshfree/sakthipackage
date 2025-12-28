@@ -13,6 +13,7 @@ export default function Navbar() {
 const [openService, setOpenService] = useState(false);
 
 
+const [openMenu, setOpenMenu] = useState(null); 
 
 
 
@@ -104,10 +105,10 @@ useEffect(() => {
 
 
   return (
-    <header  className=" z-50 ">
+    <header  className=" z-50 isolate   ">
 
    <div
-  className={`fixed top-0 left-0 w-full z-50 transition-all duration-500
+  className={`fixed top-0 left-0 w-full z-50 isolate   transition-all duration-500
     ${showTopBar ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
   `}
 >
@@ -182,7 +183,7 @@ useEffect(() => {
       {item.child && (
         <ul className="absolute left-0 top-full mt-4 w-56 bg-white shadow-xl rounded-xl 
                        opacity-0 invisible group-hover:opacity-100 group-hover:visible 
-                       translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50">
+                       translate-y-2 group-hover:translate-y-0 transition-all duration-300 z-50 isolate  ">
 
           {item.child.map((sub, idx) => (
             <li key={idx}>
@@ -219,7 +220,7 @@ useEffect(() => {
         <div className="lg:hidden">
             <div
   className={`block lg:hidden fixed w-full z-40 transition-all duration-500
-    ${showTopBar ? "top-0" : "-top-10"}
+    ${showTopBar ? "top-7" : "-top-10"}
     backdrop-blur-sm bg-white/10
   `}
 >
@@ -229,7 +230,7 @@ useEffect(() => {
               <img
                 src={logo}
                 alt="Hi-Safe Packers"
-                className="h-20 lg:h-20 w-full object-cover "
+                className="h-14 lg:h-20 w-full object-cover "
               />
             </div>
 
@@ -244,7 +245,7 @@ useEffect(() => {
           </div>
         </div>
           <nav
-        className={`${ showTopBar ? "top-35" : "top-25" } transition-all duration-500    bg-primary text-white text-sm ml-auto w-full  lg:w-[70%] clip-md2 fixed  z-50`}
+        className={`${ showTopBar ? "top-35" : "top-20" }  z-50 isolate    transition-all duration-500    bg-primary text-white text-sm ml-auto w-full  lg:w-[70%] clip-md2 fixed `}
         style={{
         }}
       >
@@ -252,12 +253,12 @@ useEffect(() => {
 
         {/* MOBILE MENU */}
      <div
-  className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out
-    ${open ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}
+  className={`lg:hidden overflow-auto transition-all rounded-lg duration-300 ease-in-out z-50 isolate  
+    ${open ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}
   `}
 >
-  <div className="bg-white shadow-lg rounded-b-2xl border-t border-amber-200 mt-1">
-    <ul className="flex flex-col divide-y divide-amber-100">
+  <div className="bg-white shadow-lg rounded-b-2xl border-t border-amber-200 mt-1 z-50 isolate  ">
+    <ul className="flex flex-col divide-y divide-amber-100 z-50 isolate  ">
 
       {menuItems.map((item) => (
         <li key={item.name}>
@@ -282,43 +283,49 @@ useEffect(() => {
           {/* ===== MENU WITH CHILD (SERVICES) ===== */}
           {item.child && (
             <>
-              <button
-                onClick={() => setOpenService(!openService)}
-                className="w-full flex justify-between items-center px-6 py-4 font-medium text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition"
-              >
-                {item.name}
-                <span
-                  className={`transform transition-transform duration-300 ${
-                    openService ? "rotate-180" : ""
-                  }`}
-                >
-                  ▼
-                </span>
-              </button>
+             <button
+  onClick={() =>
+    setOpenMenu(openMenu === item.name ? null : item.name)
+  }
+  className="w-full flex justify-between items-center px-6 py-4 font-medium
+             text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition"
+>
+  {item.name}
+  <span
+    className={`transform transition-transform duration-300 ${
+      openMenu === item.name ? "rotate-180" : ""
+    }`}
+  >
+    ▼
+  </span>
+</button>
+
 
               {/* ===== SUB MENU ===== */}
-              <div
-                className={`overflow-hidden transition-all duration-300
-                ${openService ? "max-h-96" : "max-h-0"}
-              `}
-              >
-                <ul className="bg-amber-50">
-                  {item.child.map((child) => (
-                    <li key={child.path}>
-                      <NavLink
-                        to={child.path}
-                        onClick={() => {
-                          setOpen(false);
-                          setOpenService(false);
-                        }}
-                        className="block px-10 py-3 text-sm text-gray-700 hover:text-amber-600 hover:bg-amber-100 transition"
-                      >
-                        {child.name}
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div
+  className={`overflow-hidden transition-all duration-300
+    ${openMenu === item.name ? "max-h-96" : "max-h-0"}
+  `}
+>
+  <ul className="bg-amber-50">
+    {item.child.map((child) => (
+      <li key={child.path}>
+        <NavLink
+          to={child.path}
+          onClick={() => {
+            setOpen(false);
+            setOpenMenu(null);
+          }}
+          className="block px-10 py-3 text-sm text-gray-700
+                     hover:text-amber-600 hover:bg-amber-100 transition"
+        >
+          {child.name}
+        </NavLink>
+      </li>
+    ))}
+  </ul>
+</div>
+
             </>
           )}
         </li>
@@ -334,10 +341,10 @@ useEffect(() => {
 
       {/* ================= PURPLE MENU BAR ================= */}
     
-      <div className="h-0.5 bg-primary w-full" >
+      <div className="h-0.5 bg-primary w-full " >
 
       </div>
-      <div className="fixed left-10 bottom-20" >
+      <div className="fixed left-5 md:left-10 bottom-5 md:bottom-20 z-50 isolate  " >
 <a href="tel:9586343232" className="relative inline-block">
   {/* Ping animation */}
   <div className="absolute inset-0 rounded-full bg-red animate-ping"></div>
@@ -350,7 +357,7 @@ useEffect(() => {
 
 
       </div>
-       <div className="fixed right-10 bottom-20 cursor-pointer" >
+       <div className="fixed right-5  md:right-10 bottom-5 md:bottom-20 cursor-pointer  z-50 isolate  " >
    <a
   href="https://wa.me/919586343232"
   target="_blank"

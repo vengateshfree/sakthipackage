@@ -73,7 +73,7 @@ export default function HeroCarousel() {
 
             {/* Content */}
 
-            <div className="absolute inset-0 flex items-center justify-start">
+            <div className="absolute inset-0 flex items-center mt-20 md:mt-0 justify-start">
               <div className="container mx-auto px-6 lg:px-16">
                 <div className="max-w-4xl text-white">
 
@@ -89,7 +89,7 @@ export default function HeroCarousel() {
                     <div className="flex" >
                       <button
                         onClick={() => navigate("/contact")}
-                        className="mt-6 cursor-pointer relative z-50 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition"
+                        className="mt-6 cursor-pointer relative z-10 bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-md font-semibold transition"
                       >
                         Contact Us
                       </button>

@@ -14,17 +14,18 @@ export default function CompanyIntro() {
           {/* Border Accent */}
 
           {/* Image */}
-          <div className="z-50" >
+          <div className="z-10" >
           <img
             src={parcel12}
             alt="Logistics"
-            className="relative  z-10 rounded-2xl w-full object-cover"
+            className="  z-10 rounded-2xl w-full object-cover"
           />
           </div>
           <div className="absolute -right-5 top-7 h-[90%] w-10 rounded-md border-2 border-lime-400 hidden z-0 lg:block"></div>
 
           {/* Badge */}
-          <div className="absolute -bottom-8 right-8 bg-primary text-white rounded-2xl px-8 py-6 flex items-center gap-5 z-20 shadow-lg">
+          <div  className="relative z-10" >
+          <div className="absolute -bottom-8 right-8 bg-primary text-white rounded-2xl px-8 py-6 flex items-center gap-5 z-10 shadow-lg">
             <div className="bg-accent text-primary rounded-full ">
               <Trophy size={40}  className="text-white" />
             </div>
@@ -32,6 +33,7 @@ export default function CompanyIntro() {
               <h3 className="text-3xl font-bold">20+</h3>
               <p className="text-sm opacity-90">Winning award</p>
             </div>
+          </div>
           </div>
         </div>
 
