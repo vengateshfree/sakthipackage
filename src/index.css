@@ -163,3 +163,12 @@
 .animate-slide-up {
   animation: slideUpFade 1s ease-out forwards;
 }
+
+
+.carousel .control-dots {
+  z-index: 10 !important;
+}
+
+.carousel .carousel-status {
+  z-index: 10 !important;
+}
