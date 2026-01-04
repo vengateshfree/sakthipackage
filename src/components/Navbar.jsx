@@ -4,13 +4,15 @@
 
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import logo from '../assets/logo.png'
 
 export default function Navbar() {
   
   const [open, setOpen] = useState(false);
 const [openService, setOpenService] = useState(false);
+
+const navigate = useNavigate();
 
 
 const [openMenu, setOpenMenu] = useState(null); 
@@ -202,7 +204,7 @@ useEffect(() => {
 </ul>
 
 
-    <div className="bg-primary py-2 px-5 text-white font-semibold rounded-md">
+    <div onClick={() =>navigate("/contact")} className="bg-primary cursor-pointer py-2 px-5 text-white font-semibold rounded-md">
       Get Started
     </div>
 
