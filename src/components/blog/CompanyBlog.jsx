@@ -1,7 +1,7 @@
 import React from 'react';
 import parcel10 from '../../assets/parcel10.jpg'
-import parcel21 from '../../assets/parcel21.jpeg'
-import parcel11 from '../../assets/parcel11.jpg'
+import parcel21 from '../../assets/parcel25.jpg'
+import parcel11 from '../../assets/parcel11.png'
 
 
 export default function CompanyBlog() {
@@ -60,7 +60,7 @@ export default function CompanyBlog() {
         {/* Header */}
       
         {/* Blog Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  my-10">
           {blogPosts.map((post) => (
             <div 
               key={post.id}

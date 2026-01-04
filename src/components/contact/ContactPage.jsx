@@ -96,7 +96,7 @@ export default function ContactPage() {
                   <Phone className="w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Phone</p>
-                    <p className="text-blue-100">+91 98765 43210</p>
+                    <p className="text-blue-100">+91 96550 99911</p>
                   </div>
                 </div>
                 
@@ -104,7 +104,7 @@ export default function ContactPage() {
                   <Mail className="w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-blue-100">contact@company.com</p>
+                    <p className="text-blue-100">info@hisafepackersandmovers.com</p>
                   </div>
                 </div>
                 
@@ -112,7 +112,7 @@ export default function ContactPage() {
                   <MapPin className="w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Address</p>
-                    <p className="text-blue-100">123 Business Street<br />Salem, Tamil Nadu 636001</p>
+                    <p className="text-blue-100">#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453</p>
                   </div>
                 </div>
               </div>
@@ -282,7 +282,10 @@ export default function ContactPage() {
 
 
                 <iframe
-  src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.34611180524!2d78.0558950787394!3d11.653723377452316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614830!5m2!1sen!2sin`}
+  src={`
+        https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.328400615507!2d77.43712207588007!3d11.454195688748585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba93d8a0b1c8f0b%3A0x9c4b2c8b8a9d5f3f!2sGobichettipalayam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614831!5m2!1sen!2sin
+
+    `}
   width="100%"
   height="350"
   style={{ border: 0 }}

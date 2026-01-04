@@ -4,6 +4,8 @@ import parcel15 from '../../assets/parcel15.jpg'
 import parcel13 from '../../assets/parcel13.jpg'
 import parcel16 from '../../assets/parcel16.jpg'
 import parcel3 from '../../assets/parcel3.jpg'
+import parcel8 from '../../assets/parcel8.jpg'
+import parce23 from '../../assets/parcel23.jpg'
 
 export default function OurProcess() {
   const steps = [
@@ -11,13 +13,13 @@ export default function OurProcess() {
       step: "01",
       title: "Order Processing",
       desc: "The logistics process begins with the receipt of customer orders.",
-      img: parcel15,
+      img: parcel8,
     },
     {
       step: "02",
       title: "Warehousing",
       desc: "Goods that are ready for shipment are stored in warehouses.",
-      img: parcel13,
+      img: parce23,
     },
     {
       step: "03",

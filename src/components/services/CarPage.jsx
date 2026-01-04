@@ -1,13 +1,19 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
-import parcel22 from "../../assets/parcel22.jpg";
+// import parcel22 from "../../assets/parcel22.jpg";
+
+
+import parcel9 from '../../assets/parcel9.jpg'
+// import parcel10 from '../assets/parcel10.jpg'
+// import parcel11 from '../assets/parcel11.png'
+
 
 function CarPage() {
   const [openFaq, setOpenFaq] = useState(null);
 
   // ===== PAGE CONTENT DATA =====
  const pageContent = {
-  heroImage: parcel22,
+  heroImage: parcel9,
   title: "Car Transportation Services",
   description: [
     "Our Car Transportation Service ensures the safe and efficient movement of your vehicle across cities and states. Whether you are relocating, purchasing a new car, or moving for work, we provide secure door-to-door car transport with complete care.",

@@ -1,13 +1,12 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
-import parcel8 from "../../assets/parcel8.jpg";
+import parcel11 from "../../assets/parcel11.png";
 function LoadingPage() {
   const [openFaq, setOpenFaq] = useState(null);
 
 const pageContent = {
-  heroImage:
-    "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=400&fit=crop",
+  heroImage: parcel11,
   title: "Loading & Unloading Services",
   description: [
     "Our Loading & Unloading Services are designed to ensure the safe handling of goods during transportation and relocation. Whether it is household items, office equipment, or commercial cargo, our trained workforce manages every item with care and efficiency.",

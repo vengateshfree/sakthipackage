@@ -1,6 +1,42 @@
 import React, { useState } from 'react';
 import parcel10 from '../../assets/parcel10.jpg'
-import parcel14 from '../../assets/parcel14.jpg'
+import work1 from "../../assets/work1.jpeg";
+import work2 from "../../assets/work2.jpeg";
+import work3 from "../../assets/work3.jpeg";
+import work4 from "../../assets/work4.jpeg";
+import work5 from "../../assets/work5.jpeg";
+import work6 from "../../assets/work6.jpeg";
+import work7 from "../../assets/work7.jpeg";
+import work8 from "../../assets/work8.jpeg";
+import work9 from "../../assets/work9.jpeg";
+import work10 from "../../assets/work10.jpeg";
+import work11 from "../../assets/work11.jpeg";
+import work12 from "../../assets/work12.jpeg";
+import work13 from "../../assets/work13.jpeg";
+import work14 from "../../assets/work14.jpeg";
+import work15 from "../../assets/work15.jpeg";
+import work16 from "../../assets/work16.jpeg";
+import work17 from "../../assets/work17.jpeg";
+import work18 from "../../assets/work18.jpeg";
+import work19 from "../../assets/work19.jpeg";
+import work20 from "../../assets/work20.jpeg";
+import work21 from "../../assets/work21.jpeg";
+import work22 from "../../assets/work22.jpeg";
+import work23 from "../../assets/work23.jpeg";
+import work24 from "../../assets/work24.jpeg";
+import work25 from "../../assets/work25.jpeg";
+import work26 from "../../assets/work26.jpeg";
+import work27 from "../../assets/work27.jpeg";
+import work28 from "../../assets/work28.jpeg";
+import work29 from "../../assets/work29.jpeg";
+import work30 from "../../assets/work30.jpeg";
+import work31 from "../../assets/work31.jpeg";
+import work32 from "../../assets/work32.jpeg";
+import work33 from "../../assets/work33.jpeg";
+import work34 from "../../assets/work34.jpeg";
+import work35 from "../../assets/work35.jpeg";
+import work36 from "../../assets/work36.jpeg";
+
 
 const OurWorks = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -8,29 +44,45 @@ const OurWorks = () => {
 
   const filters = ['All', 'Warehouse', 'Transport', 'Logistic', 'Freight'];
 
-  const portfolioItems = [
-    {
-      id: 1,
-      title: 'Warehouse',
-      category: 'Warehouse',
-      image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
-      discount: null
-    },
-    {
-      id: 2,
-      title: 'Transport',
-      category: 'Transport',
-      image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
-      discount: null
-    },
-    {
-      id: 3,
-      title: 'Air',
-      category: 'Freight',
-      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
-      discount: '20%'
-    }
-  ];
+const portfolioItems = [
+  { id: 1, image: work1, discount: null },
+  { id: 2, image: work2, discount: null },
+  { id: 3, image: work3, discount: "20%" },
+  { id: 4, image: work4, discount: null },
+  { id: 5, image: work5, discount: null },
+  { id: 6, image: work6, discount: null },
+  { id: 7, image: work7, discount: null },
+  { id: 8, image: work8, discount: null },
+  { id: 9, image: work9, discount: null },
+  { id: 10, image: work10, discount: null },
+  { id: 11, image: work11, discount: null },
+  { id: 12, image: work12, discount: null },
+  { id: 13, image: work13, discount: null },
+  { id: 14, image: work14, discount: null },
+  { id: 15, image: work15, discount: null },
+  { id: 16, image: work16, discount: null },
+  { id: 17, image: work17, discount: null },
+  { id: 18, image: work18, discount: null },
+  { id: 19, image: work19, discount: null },
+  { id: 20, image: work20, discount: null },
+  { id: 21, image: work21, discount: null },
+  { id: 22, image: work22, discount: null },
+  { id: 23, image: work23, discount: null },
+  { id: 24, image: work24, discount: null },
+  { id: 25, image: work25, discount: null },
+  { id: 26, image: work26, discount: null },
+  { id: 27, image: work27, discount: null },
+  { id: 28, image: work28, discount: null },
+  { id: 29, image: work29, discount: null },
+  { id: 30, image: work30, discount: null },
+  { id: 31, image: work31, discount: null },
+  { id: 32, image: work32, discount: null },
+  { id: 33, image: work33, discount: null },
+  { id: 34, image: work34, discount: null },
+  { id: 35, image: work35, discount: null },
+  { id: 36, image: work36, discount: null }
+];
+
 
   const filteredItems = activeFilter === 'All'
     ? portfolioItems
@@ -78,8 +130,7 @@ const OurWorks = () => {
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <h1 className="h1 font-bold text-white">
-            Our portfolio
-          </h1>
+            Our Works          </h1>
       
         </div>
       </div>
@@ -94,7 +145,7 @@ const OurWorks = () => {
         </div> */}
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mb-16 mt-10">
+        {/* <div className="flex flex-wrap justify-center gap-3 mb-16 mt-10">
           {filters.map((filter) => (
             <button
               key={filter}
@@ -107,12 +158,12 @@ const OurWorks = () => {
               {filter}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Portfolio Grid */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-300 ${isAnimating ? 'opacity-0 transform scale-95' : 'opacity-100 transform scale-100'
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-10 transition-all duration-300 ${isAnimating ? 'opacity-0 transform scale-95' : 'opacity-100 transform scale-100'
           }`}>
-          {filteredItems.map((item, index) => (
+          {portfolioItems.map((item, index) => (
             <div
               key={item.id}
               className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 animate-fadeInUp"
@@ -127,25 +178,25 @@ const OurWorks = () => {
                 />
 
                 {/* Discount Badge */}
-                {item.discount && (
+                {/* {item.discount && (
                   <div className="absolute top-4 right-4 bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-sm shadow-lg">
                     {item.discount}
                   </div>
-                )}
+                )} */}
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
               </div>
 
               {/* Title */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-white">
+              {/* <div className="absolute bottom-0 left-0 right-0 p-6 bg-white">
                 <div className="flex items-center">
                   <div className="w-8 h-0.5 bg-red-500 mr-3"></div>
                   <h3 className="text-xl font-bold text-gray-900">
                     {item.title}
                   </h3>
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

@@ -2,12 +2,14 @@ import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
 import parcel20 from "../../assets/parcel20.jpg";
+
+import parcel10 from '../../assets/parcel10.jpg'
 function OfficePage() {
   const [openFaq, setOpenFaq] = useState(null);
 
 
   const pageContent = {
-  heroImage: parcel20,
+  heroImage: parcel10,
   title: "Office Shifting Services",
   description: [
     "Our Office Shifting Service is designed to relocate your workspace efficiently with minimal downtime. Whether you are moving a small office or a large corporate setup, we ensure a smooth and well-coordinated transition.",

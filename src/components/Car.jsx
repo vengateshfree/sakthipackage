@@ -4,35 +4,36 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import parcel9 from '../assets/parcel9.jpg'
 import parcel10 from '../assets/parcel10.jpg'
-import parcel11 from '../assets/parcel11.jpg'
-import parcel14 from '../assets/parcel14.jpg'
+import parcel11 from '../assets/parcel11.png'
+// import parcel14 from '../assets/parcel14.jpg'
 
 
 const slides = [
-  {
+    {
     image: parcel9,
-    title: "Trusted Warehousing & Storage Services",
-    desc:
-      "Hi-Safe Packers and Movers offers secure, spacious, and well-managed warehousing solutions in Erode, ensuring complete safety for your goods.",
-  },
-  {
-    image: parcel10,
-    title: "Safe, Secure & Modern Storage Facilities",
-    desc:
-      "Our warehouses are equipped with advanced infrastructure, 24/7 surveillance, and professional handling for maximum protection.",
-  },
-  {
-    image: parcel11,
     title: "Reliable Logistics & Moving Solutions",
     desc:
       "From packing to transportation and storage, we provide end-to-end logistics services tailored to your needs.",
   },
   {
-    image: parcel14,
-    title: "Your Goods, Our Responsibility",
+    image:  parcel11,
+    title: "Trusted Warehousing & Storage Services",
     desc:
-      "We ensure careful handling, timely delivery, and complete peace of mind with our experienced moving professionals.",
+      "Hi-Safe Packers and Movers offers secure, spacious, and well-managed warehousing solutions in Erode, ensuring complete safety for your goods.",
   },
+  {
+    image:   parcel10,
+    title: "Safe, Secure & Modern Storage Facilities",
+    desc:
+      "Our warehouses are equipped with advanced infrastructure, 24/7 surveillance, and professional handling for maximum protection.",
+  },
+
+  // {
+  //   image: parcel14,
+  //   title: "Your Goods, Our Responsibility",
+  //   desc:
+  //     "We ensure careful handling, timely delivery, and complete peace of mind with our experienced moving professionals.",
+  // },
 ];
 
 

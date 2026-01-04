@@ -17,6 +17,10 @@ import parcel17 from '../../assets/parcel17.jpg'
 import parcel18 from '../../assets/parcel18.jpg'
 import parcel19 from '../../assets/parcel19.jpg'
 import parcel20 from '../../assets/parcel20.jpg'
+import parcel34 from '../../assets/parcel34.jpg'
+import work16 from '../../assets/work16.jpeg'
+import work8 from '../../assets/work8.jpeg'
+import work22 from '../../assets/work22.jpeg'
 
 const services = [
   {
@@ -24,7 +28,7 @@ const services = [
     desc: "Safe and reliable bike transportation services across cities.",
     icon: Bike,
     url: "/services/bike",
-    image:  parcel17 ,
+    image:  work16,
     reverse: false,
   },
   {
@@ -33,7 +37,7 @@ const services = [
     icon: Car,
     
     url: "/services/car",
-    image: parcel18,
+    image: parcel34,
     reverse: false,
   },
   {
@@ -42,7 +46,7 @@ const services = [
     icon: Home,
     
     url: "/services/home",
-    image: parcel19,
+    image: work8,
     reverse: true,
   },
   {
@@ -51,7 +55,7 @@ const services = [
     icon: Building2,
     
     url: "/services/office",
-    image: parcel20, 
+    image: work22, 
      reverse: true,
   },
 ];

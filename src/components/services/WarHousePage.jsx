@@ -1,14 +1,14 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
  
-import parcel8 from "../../assets/parcel8.jpg";
+import parcel11 from "../../assets/parcel11.png";
 
 function WarHousePage() {
   const [openFaq, setOpenFaq] = useState(null);
 
 
 const pageContent = { 
-  heroImage: parcel8,
+  heroImage: parcel11,
   title: "Warehouse Services",
   description: [
     "Our Warehouse Services provide secure, organized, and flexible storage solutions for household goods, commercial inventory, and business assets. Whether you need short-term or long-term storage, we offer reliable warehousing facilities to meet your requirements.",

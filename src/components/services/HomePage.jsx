@@ -1,12 +1,15 @@
 import { Minus, Plus } from "lucide-react";
 import React, { useState } from "react";
 
+import parcel10 from '../../assets/parcel10.jpg'
+
 function HomePage() {
   const [openFaq, setOpenFaq] = useState(null);
 
+  
+
 const pageContent = {
-  heroImage:
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=400&fit=crop",
+  heroImage: parcel10,
   title: "Home Shifting Services",
   description: [
     "Our Home Shifting Service is designed to make your relocation smooth, safe, and stress-free. Whether you are moving within the city or relocating to another state, we handle every aspect of your household move with care and professionalism.",

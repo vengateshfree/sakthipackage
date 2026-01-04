@@ -22,7 +22,7 @@ export default function CompanyIntro() {
     <img
       src={parcel12}
       alt="Logistics"
-      className="rounded-2xl w-full object-cover relative z-0"
+      className="rounded-2xl max-h-[500px] w-full object-cover relative z-0"
     />
 
     {/* Badge */}

@@ -3,8 +3,8 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 import parcel9 from '../../assets/parcel9.jpg'
 import parcel10 from '../../assets/parcel10.jpg'
 
-import parcel11 from '../../assets/parcel11.jpg'
-import parcel14 from '../../assets/parcel14.jpg'
+import parcel24 from '../../assets/parcel24.jpg'
+import parcel25 from '../../assets/parcel25.jpg'
 import { useNavigate } from 'react-router-dom';
 
 export default function Branches() {
@@ -12,46 +12,59 @@ export default function Branches() {
   const navigate = useNavigate()
 
   const branches = [
-  {
-    name: "Salem Branch Office",
-    address: "A Block, Anna Nagar, Fort, Salem – 636 001",
-    phone: "+91 74187 69922",
-    email: "info@velanpackers@gmail.com",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.34611180524!2d78.0558950787394!3d11.653723377452316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614830!5m2!1sen!2sin"
-  },
-  {
-    name: "Namakkal Branch Office",
-    address: "5/209 Murali Kadu, Sowdhapuram, Kumarapalayam, Namakkal – 638008",
-    phone: "+91 74187 69922",
-    email: "info@velanpackers@gmail.com",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.222763709076!2d77.98908327505474!3d11.44680739184717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96df2f7bdfd0f%3A0x9b1b53bbf1e3c9ad!2sNamakkal%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614831!5m2!1sen!2sin"
-  },
-  {
-    name: "Erode Branch Office",
-    address: "Perundurai Road, Erode – 638011",
-    phone: "+91 74187 69922",
-    email: "info@velanpackers@gmail.com",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.377873705756!2d77.71608627505693!3d11.341036691924028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f8e76c6f47f%3A0x4a8b0f14f1d72d1b!2sErode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614832!5m2!1sen!2sin"
-  },
-  {
-    name: "Coimbatore Branch Office",
-    address: "Gandhipuram, Coimbatore – 641012",
-    phone: "+91 74187 69922",
-    email: "info@velanpackers@gmail.com",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.181004673356!2d76.96007727505397!3d11.01684489212561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859a9f1df7c8f%3A0x4c2f2bfae8c8e9a6!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614833!5m2!1sen!2sin"
-  },
-  {
-    name: "Chennai Branch Office",
-    address: "Anna Nagar, Chennai – 600040",
-    phone: "+91 74187 69922",
-    email: "info@velanpackers@gmail.com",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.588471373598!2d80.21007657507442!3d13.084622790792514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265c2b1f8e4dd%3A0x53d8c6bb1c61f22c!2sAnna%20Nagar%2C%20Chennai!5e0!3m2!1sen!2sin!4v1766763614834!5m2!1sen!2sin"
-  }
+{
+  name: "Gobichettipalayam Branch Office",
+  address:
+    "#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453",
+  phone: "+91 96550 99911, +91 96550 99933",
+  email: "info@hisafepackersandmovers.com",
+  mapEmbed:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.328400615507!2d77.43712207588007!3d11.454195688748585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba93d8a0b1c8f0b%3A0x9c4b2c8b8a9d5f3f!2sGobichettipalayam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614831!5m2!1sen!2sin"
+},
+{
+  name: "Erode Branch Office",
+  address:
+    "5/287 – 22, MGR Nagar, Near Bannari Amman Sugars, Alathukombai, Erode – 638 401, Tamil Nadu",
+ phone: "+91 96550 99911, +91 96550 99933",
+  email: "info@hisafepackersandmovers.com",
+  mapEmbed:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.410214672231!2d77.23011207587654!3d11.54187648867327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f3f5f1c4dcb%3A0x9a7c8b8f3d2e6a1f!2sBannari%20Amman%20Sugars%2C%20Alathukombai!5e0!3m2!1sen!2sin!4v1766763614832!5m2!1sen!2sin"
+},
+
+
+
+  // {
+  //   name: "Namakkal Branch Office",
+  //   address: "5/209 Murali Kadu, Sowdhapuram, Kumarapalayam, Namakkal – 638008",
+  //   phone: "+91 74187 69922",
+  //   email: "info@velanpackers@gmail.com",
+  //   mapEmbed:
+  //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.222763709076!2d77.98908327505474!3d11.44680739184717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96df2f7bdfd0f%3A0x9b1b53bbf1e3c9ad!2sNamakkal%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614831!5m2!1sen!2sin"
+  // },
+  // {
+  //   name: "Erode Branch Office",
+  //   address: "Perundurai Road, Erode – 638011",
+  //   phone: "+91 74187 69922",
+  //   email: "info@velanpackers@gmail.com",
+  //   mapEmbed:
+  //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.377873705756!2d77.71608627505693!3d11.341036691924028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f8e76c6f47f%3A0x4a8b0f14f1d72d1b!2sErode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614832!5m2!1sen!2sin"
+  // },
+  // {
+  //   name: "Coimbatore Branch Office",
+  //   address: "Gandhipuram, Coimbatore – 641012",
+  //   phone: "+91 74187 69922",
+  //   email: "info@velanpackers@gmail.com",
+  //   mapEmbed:
+  //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.181004673356!2d76.96007727505397!3d11.01684489212561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859a9f1df7c8f%3A0x4c2f2bfae8c8e9a6!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614833!5m2!1sen!2sin"
+  // },
+  // {
+  //   name: "Chennai Branch Office",
+  //   address: "Anna Nagar, Chennai – 600040",
+  //   phone: "+91 74187 69922",
+  //   email: "info@velanpackers@gmail.com",
+  //   mapEmbed:
+  //     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.588471373598!2d80.21007657507442!3d13.084622790792514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265c2b1f8e4dd%3A0x53d8c6bb1c61f22c!2sAnna%20Nagar%2C%20Chennai!5e0!3m2!1sen!2sin!4v1766763614834!5m2!1sen!2sin"
+  // }
 ];
 
 
@@ -101,12 +114,12 @@ export default function Branches() {
             </div>
             <div className="grid grid-cols-2 gap-4 w-full md:w-auto">
               <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=300&h=200&fit=crop" 
+                src={parcel24}
                 alt="Packing service" 
                 className="w-full h-40 object-cover rounded-lg shadow-md"
               />
               <img 
-                src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=300&h=200&fit=crop" 
+                src={parcel25}
                 alt="Moving service" 
                 className="w-full h-40 object-cover rounded-lg shadow-md"
               />

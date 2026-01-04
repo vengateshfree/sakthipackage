@@ -3,11 +3,13 @@ import React, { useState } from "react";
 
 import parcel13 from "../../assets/parcel13.jpg";
 
+import parcel10 from '../../assets/parcel10.jpg'
+
 function PackagePage() { 
   const [openFaq, setOpenFaq] = useState(null);
 
   const pageContent = {
-  heroImage: parcel13,
+  heroImage: parcel10,
   title: "Packing & Moving Services",
   description: [
     "Our Packing & Moving Services are designed to ensure safe, organized, and hassle-free relocation of your belongings. Whether it is household goods, office equipment, or individual packages, we handle every item with care and precision.",

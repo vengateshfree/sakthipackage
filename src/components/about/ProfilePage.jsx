@@ -3,10 +3,9 @@
 import React from "react";
 
 import parcel10 from '../../assets/parcel10.jpg'
-
-import parcel3 from '../../assets/parcel3.jpg'
-import parcel5 from '../../assets/parcel5.jpg'
-import parcel7 from '../../assets/parcel7.jpg'
+import parcel3 from '../../assets/parcel25.jpg'
+import parcel5 from '../../assets/parcel23.jpg'
+import parcel7 from '../../assets/parcel33.jpg'
 
 function ProfilePage() {
   return ( 

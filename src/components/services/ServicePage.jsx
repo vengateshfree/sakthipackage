@@ -4,7 +4,6 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import parcel10 from '../../assets/parcel10.jpg'
 
 
-
 export default function ServicePage() {
   const [openFaq, setOpenFaq] = useState(null);
   const navigate = useNavigate();
@@ -103,7 +102,7 @@ console.log("Current Path:", location.pathname, "Service Path:", service.path, "
             </div>
             <div>
               <div className="h6 font-bold text-yellow-900">Email Address</div>
-              <div className="h6 text-gray-600">info@yourdomain.com</div>
+              <div className="h6 text-gray-600 break-all">info@hisafepackersandmovers.com</div>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -112,7 +111,7 @@ console.log("Current Path:", location.pathname, "Service Path:", service.path, "
             </div>
             <div>
               <div className="h6 font-bold text-yellow-900">Phone Number</div>
-              <div className="h6 text-gray-600">+1234 123 456 789</div>
+              <div className="h6 text-gray-600"> +91 96550 99933</div>
             </div>
           </div>
           <div className="flex items-start gap-3">
@@ -121,7 +120,7 @@ console.log("Current Path:", location.pathname, "Service Path:", service.path, "
             </div>
             <div>
               <div className="h6 font-bold text-yellow-900">Location</div>
-              <div className="h6 text-gray-600">Guild Street 512B, UK</div>
+              <div className="h6 text-gray-600">#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453</div>
             </div>
           </div>
         </div>
@@ -138,11 +137,11 @@ console.log("Current Path:", location.pathname, "Service Path:", service.path, "
           <div className="text-lg font-bold mb-2">How Can We Help?</div>
           <div className="text-sm mb-1 flex items-center justify-center gap-1">
             <Phone className="w-3 h-3" />
-            <span>(+1)123 456 789</span>
+            <span> +91 96550 99933</span>
           </div>
           <div className="text-xs flex items-center justify-center gap-1">
             <Mail className="w-3 h-3" />
-            <span>info@youremail.com</span>
+            <span>info@hisafepackersandmovers.com</span>
           </div>
         </div>
       </div>
