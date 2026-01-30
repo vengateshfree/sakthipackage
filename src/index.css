@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 
+@import "swiper/css";
+@import "swiper/css/effect-fade";
+@import "swiper/css/autoplay";
+
+
 /* index.css or App.css */
 .clip-md {
   clip-path: none;
@@ -41,7 +46,7 @@
 
 @layer base {
   h1, .h1 {
-    @apply text-3xl sm:text-6xl md:text-6xl lg:text-[80px] font-semibold;
+    @apply text-3xl sm:text-4xl md:text-6xl md:text-6xl lg:text-[80px] font-semibold;
   }
 
   h2, .h2 {
@@ -171,4 +176,67 @@
 
 .carousel .carousel-status {
   z-index: 10 !important;
+}
+
+
+
+.carousel .slide {
+  pointer-events: auto !important;
+}
+
+/* Prevent carousel wrapper from swallowing clicks */
+.carousel .slider-wrapper {
+  pointer-events: none;
+}
+
+/* Re-enable pointer events for slide content */
+.carousel .slide > div {
+  pointer-events: auto;
+}
+
+
+
+/* Disable pointer events on the blocking wrapper */
+.carousel .slider-wrapper {
+  pointer-events: none;
+}
+
+/* Re-enable pointer events inside slides */
+.carousel .slide {
+  pointer-events: auto;
+}
+
+/* Ensure slide children are clickable */
+.carousel .slide * {
+  pointer-events: auto;
+}
+
+
+/* Initial hidden state */
+.hero-animate {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* FIRST LOAD animation */
+.hero-loaded .hero-animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* SLIDE CHANGE animation */
+.swiper-slide-active .hero-animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* Delay helpers */
+.hero-delay-1 {
+  transition-delay: 0.2s;
+}
+
+.hero-delay-2 {
+  transition-delay: 0.4s;
 }
