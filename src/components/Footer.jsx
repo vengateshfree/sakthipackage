@@ -95,28 +95,35 @@ const Footer = () => {
           City Wise Links:
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
-          {Array(3)
-            .fill([
-              "Packers and Movers in Erode",
-              "Packers and Movers in Tirupur",
-              "Packers and Movers in Gobichettipalayam",
-              "Packers and Movers in Salem",
-              "Packers and Movers in Coimbatore",
-              "Packers and Movers in Namakkal",
-              "Packers and Movers in Bhavani",
-            ])
-            .map((col, i) => (
-              <ul key={i} className="space-y-2">
-                {col.map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <ChevronRight size={14} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            ))}
-        </div>
+     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+  {[
+    [
+      "Packers and Movers in Gobichettipalayam",
+      "Packers and Movers in Kavantha Padi",
+      "Packers and Movers in Nambiyur",
+    ],
+    [
+      "Packers and Movers in Arasur",
+      "Packers and Movers in Bhavani Sathyamangalam",
+      "Packers and Movers in Otthakkuthirai",
+    ],
+    [
+      "Packers and Movers in TN Palayam",
+      "Packers and Movers in Anthiyur",
+      "Packers and Movers in Athani",
+    ],
+  ].map((col, i) => (
+    <ul key={i} className="space-y-2">
+      {col.map((item) => (
+        <li key={item} className="flex items-center gap-2">
+          <ChevronRight size={14} />
+          {item}
+        </li>
+      ))}
+    </ul>
+  ))}
+</div>
+
       </div>
 
       {/* Bottom Bar */}
