@@ -14,12 +14,13 @@ export default function Branches() {
   const branches = [
 {
   name: "Gobichettipalayam Branch Office",
-  address:
-    "#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453",
+  address:" D/O Thangaraj, 44,  Neelampayalam,  Kollapanur, Gobichettipalayam, Getticheyur, Erode District, Tamil Nadu – 638110",
+
+  // address:"#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453",
+
   phone: "+91 96550 99911, +91 96550 99933",
   email: "info@hisafepackersandmovers.com",
-  mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.328400615507!2d77.43712207588007!3d11.454195688748585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba93d8a0b1c8f0b%3A0x9c4b2c8b8a9d5f3f!2sGobichettipalayam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1766763614831!5m2!1sen!2sin"
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501243.05649920995!2d76.99168377998062!3d11.041522533112273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba90900755f7a95%3A0x9b3b4296f4d1f443!2sThangaraj%20Home!5e0!3m2!1sen!2sin!4v1770134039246!5m2!1sen!2sin"
 },
 {
   name: "Erode Branch Office",

@@ -1,5 +1,5 @@
 import { Phone, ChevronRight } from "lucide-react";
- import logo from '../assets/logo.png';
+import logo from '../assets/logo.png';
 const Footer = () => {
   return (
     <footer className="bg-[#1f2326] text-gray-300 pt-14">
@@ -46,16 +46,18 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-lg font-semibold mb-4">Address</h3>
           <p className="text-sm leading-6 mb-4">
-            #1181, Annapoorni Maligai Upstar, Mettur Road,
+
+            D/O Thangaraj, 44,
             <br />
-            Erode – 638 011.
+            Neelampayalam,
+            Kollapanur,
             <br />
+            Gobichettipalayam,
+            Getticheyur,
             <br />
-            15/8, Sidhambaranar Street, Karattadi Palayam,
-            <br />
-            Near Gobi arts college, Gobichettipalayam,
-            <br />
-            Erode – 638 453
+            Erode District, <br />
+            Tamil Nadu – 638110
+
           </p>
           <p className="flex items-center gap-2 text-white text-sm">
             <Phone size={16} />
@@ -95,34 +97,34 @@ const Footer = () => {
           City Wise Links:
         </h3>
 
-     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
-  {[
-    [
-      "Packers and Movers in Gobichettipalayam",
-      "Packers and Movers in Kavantha Padi",
-      "Packers and Movers in Nambiyur",
-    ],
-    [
-      "Packers and Movers in Arasur",
-      "Packers and Movers in Bhavani Sathyamangalam",
-      "Packers and Movers in Otthakkuthirai",
-    ],
-    [
-      "Packers and Movers in TN Palayam",
-      "Packers and Movers in Anthiyur",
-      "Packers and Movers in Athani",
-    ],
-  ].map((col, i) => (
-    <ul key={i} className="space-y-2">
-      {col.map((item) => (
-        <li key={item} className="flex items-center gap-2">
-          <ChevronRight size={14} />
-          {item}
-        </li>
-      ))}
-    </ul>
-  ))}
-</div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm">
+          {[
+            [
+              "Packers and Movers in Gobichettipalayam",
+              "Packers and Movers in Kavantha Padi",
+              "Packers and Movers in Nambiyur",
+            ],
+            [
+              "Packers and Movers in Arasur",
+              "Packers and Movers in Bhavani Sathyamangalam",
+              "Packers and Movers in Otthakkuthirai",
+            ],
+            [
+              "Packers and Movers in TN Palayam",
+              "Packers and Movers in Anthiyur",
+              "Packers and Movers in Athani",
+            ],
+          ].map((col, i) => (
+            <ul key={i} className="space-y-2">
+              {col.map((item) => (
+                <li key={item} className="flex items-center gap-2">
+                  <ChevronRight size={14} />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
 
       </div>
 
