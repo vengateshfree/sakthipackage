@@ -42,7 +42,8 @@ export default function CustomSelect({
         "
       >
         <span className={formData[thisOne] ? "text-gray-800" : "text-gray-400"}>
-          {formData[thisOne] || "Select a service"}
+          {/* {formData[thisOne] || "Select a service"} */}
+          {thisOne == "service"  ? "Select a service" : "Select a location"}
         </span>
 
         <ChevronDown

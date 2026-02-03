@@ -120,7 +120,8 @@ console.log("Current Path:", location.pathname, "Service Path:", service.path, "
             </div>
             <div>
               <div className="h6 font-bold text-yellow-900">Location</div>
-              <div className="h6 text-gray-600">#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453</div>
+              <div className="h6 text-gray-600">D/O Thangaraj, 44, Neelampayalam, Kollapanur, Gobichettipalayam, Getticheyur, Erode District, <br /> Tamil Nadu – 638110</div>
+              {/* <div className="h6 text-gray-600">#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453</div> */}
             </div>
           </div>
         </div>

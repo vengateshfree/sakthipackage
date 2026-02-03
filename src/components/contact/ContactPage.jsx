@@ -15,22 +15,20 @@ export default function ContactPage() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const services = [
-    'Web Development',
-    'Mobile App Development',
-    'UI/UX Design',
-    'Digital Marketing',
-    'SEO Services',
-    'Cloud Solutions',
-    'Other'
-  ];
+const services = [
+  "Bike Transportation",
+  "Car Transportation",
+  "Home Shifting",
+  "Office Shifting",
+  "Package Moving",
+  "Relocation Services",
+  "Warehouse Services",
+  "Loading & Unloading"
+];
+
 
   const locations = [
-    'Salem, Tamil Nadu',
-    'Chennai, Tamil Nadu',
-    'Coimbatore, Tamil Nadu',
-    'Bangalore, Karnataka',
-    'Mumbai, Maharashtra',
+    'Erode, Tamil Nadu',
     'Other'
   ];
 
@@ -112,7 +110,8 @@ export default function ContactPage() {
                   <MapPin className="w-6 h-6 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Address</p>
-                    <p className="text-blue-100">#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453</p>
+                    <p className="text-blue-100">D/O Thangaraj, 44, Neelampayalam, Kollapanur, Gobichettipalayam, Getticheyur, Erode District, <br /> Tamil Nadu – 638110</p>
+                    {/* <p className="text-blue-100">#15/8, Sidhambaranar Street, Karattadi Palayam, Near Gobi Arts College, Gobichettipalayam, Erode – 638 453</p> */}
                   </div>
                 </div>
               </div>
@@ -173,7 +172,7 @@ export default function ContactPage() {
           hover:border-red-500
           focus:outline-none focus:ring-2 focus:ring-red-500
           transition "
-                        placeholder="John Doe"
+                        placeholder="Enter your name"
                       />
                     </div>
 
